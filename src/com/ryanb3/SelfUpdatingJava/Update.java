@@ -24,6 +24,7 @@ public class Update {
 				downloadJar(programName, newName, URL);
 				launchJar(newName);
 				deleteOldJar(programName, currentIndex);
+				System.exit(0);
 			} catch(IOException ex) {
 				
 			}
