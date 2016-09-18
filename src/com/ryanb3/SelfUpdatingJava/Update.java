@@ -1,6 +1,7 @@
 package com.ryanb3.SelfUpdatingJava;
 
 import java.io.File;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -9,8 +10,6 @@ import java.net.URLConnection;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -30,6 +29,8 @@ public class Update {
 			} catch(IOException ex) {
 				
 			}
+		} else {
+			return;
 		}
 	}
 	
