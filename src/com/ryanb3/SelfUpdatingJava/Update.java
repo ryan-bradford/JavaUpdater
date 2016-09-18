@@ -19,7 +19,7 @@ public class Update {
 	public Update(String URL, String programName, String indexName, String currentIndex)
 			throws MalformedURLException, IOException {
 		String newIndex = checkIndex(URL + indexName);
-		if (JOptionPane.showConfirmDialog(null, "Would you like to check for an update?") == 0 && !newIndex.equals(currentIndex)) {
+		if (new JOptionPane().showConfirmDialog(null, "Would you like to check for an update?") == 0 && !newIndex.equals(currentIndex)) {
 			try {
 				String newName = programName + " " + newIndex + ".jar";
 				downloadJar(programName, newName, URL);
