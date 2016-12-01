@@ -1,4 +1,4 @@
-package com.ryanb3.SelfUpdatingJava;
+package io.thaumavor.rbradford.SelfUpdatingJava;
 
 import java.io.File;
 
